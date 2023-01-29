@@ -1,0 +1,8 @@
+#dependencies
+node_modules
+dist
+
+#misc
+.env.local
+.env
+docker-compose.yml
