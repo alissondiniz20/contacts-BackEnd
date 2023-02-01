@@ -1,9 +1,6 @@
 ### API doc
 
----
+--- Nesta aplicação, foi realizado um CRUD que opera os métodos HTTP's, onde pode se inserir, listar, atualizar e deletar informações.
+--- Foi utilizado express como server do NODE; o SEQUELIZE para conexão e operação do banco de dados, que foi o MYSQL;
 
-### Requisitos
-
-- [] Deve fazer Login para acessar a agenda (Authenticate)
-- [] Deve conter uma rota para: Retornar Dados de um Contato
-- [] Deve conter uma rota para: Inserir/Atualizar Contatos
+--- Logo mais, terá registrado também, o front-end dessa aplicação;
