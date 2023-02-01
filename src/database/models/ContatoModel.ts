@@ -1,49 +1,6 @@
 import { DataTypes } from "sequelize"
 import { db } from "../db"
 
-// class ContatoModel extends Model {
-//   declare id: number
-// }
-
-
-// ContatoModel.init({
-//   id : {
-//     type: DataTypes.INTEGER,
-//     autoIncrement: true,
-//     allowNull: false,
-//     primaryKey: true,
-//   },
-//   nome: {
-//     type: DataTypes.STRING,
-//     allowNull: true,
-//   },
-//   sobrenome:{
-//     type: DataTypes.STRING,
-//     allowNull: true,
-//   },
-//   telefone: {
-//     type:  DataTypes.INTEGER,
-//     allowNull: true,
-//   },
-//   datanasci: {
-//     type: DataTypes.DATEONLY,
-//     allowNull: true,
-//   },
-//   endereco: {
-//     type: DataTypes.STRING,
-//     allowNull: true,
-//   },
-//   email: {
-//     type: DataTypes.STRING,
-//     allowNull: true,
-//     unique: true,
-//   }
-// }, { 
-//   Sequelize, 
-// });
-
-// const contatos = new ContatoModel({ id: 1 });
-
 export const ContatoModel = db.define("contacts", {
   id : {
     type: DataTypes.INTEGER,
