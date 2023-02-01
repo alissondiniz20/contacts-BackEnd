@@ -47,36 +47,37 @@ import { db } from "../db"
 export const ContatoModel = db.define("contacts", {
   id : {
     type: DataTypes.INTEGER,
-    autoIncrement: true,
     allowNull: false,
     primaryKey: true,
+    autoIncrement: true,
   },
   nome: {
     type: DataTypes.STRING,
-    allowNull: true,
+    allowNull: false,
   },
   sobrenome:{
     type: DataTypes.STRING,
-    allowNull: true,
+    allowNull: false,
   },
   telefone: {
     type:  DataTypes.STRING,
-    allowNull: true,
+    allowNull: false,
   },
   datanasci: {
     type: DataTypes.DATEONLY,
-    allowNull: true,
+    allowNull: false,
   },
   endereco: {
     type: DataTypes.STRING,
-    allowNull: true,
+    allowNull: false,
   },
   email: {
     type: DataTypes.STRING,
-    allowNull: true,
+    allowNull: false,
     unique: true,
   }
 }, {
+    tableName: 'contacts',
     timestamps: false,
 });
 
@@ -90,14 +91,3 @@ db.authenticate().then(() => {
 .catch((error) => {
   console.log(`Erro de conexão.`, error)
 });
-
-// (async () => {
-//   try {
-//     const resultado = await db.sync()
-//     console.log(resultado)
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }) ();
-
-
