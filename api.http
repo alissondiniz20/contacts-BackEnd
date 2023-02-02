@@ -2,9 +2,9 @@ POST http://localhost:3000/contato/
 Content-Type: application/json
 
 {
-  "name":"",
-  "lastName":"",
-  "phone": ,
-  "address":"",
+  "nome":"",
+  "sobrenome":"",
+  "telefone": ,
+  "endereco":"",
   "email":""
 }
