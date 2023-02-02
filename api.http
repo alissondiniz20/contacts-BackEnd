@@ -1,10 +1,10 @@
-POST http://localhost:3000/contact
+POST http://localhost:3000/contato/
 Content-Type: application/json
 
 {
-  "name":"Alisson",
-  "lastName":"Diniz",
-  "phone":998973084,
-  "address":"rua de teste",
-  "email":"alissonteste5@gmail.com"
+  "name":"",
+  "lastName":"",
+  "phone": ,
+  "address":"",
+  "email":""
 }
